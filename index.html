@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FOSS Club | Linktree</title>
+   <script src="https://kit.fontawesome.com/cb7f83baaf.js" crossorigin="anonymous"></script>
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f172a;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  width: 200px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #94a3b8;
+  margin-bottom: 2rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.links a  {
+  display: block;
+  background: #1e293b;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.links a:hover {
+  background: #334155;
+  transform: scale(1.03);
+}
+
+footer {
+  margin-top: 2rem;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  color: #aaa;
+  font-size: 14px;
+}
+.links i{
+    color:greenyellow;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <img src="Evantage_dark_HZ.png" alt="FOSS Club Logo" class="logo">
+    <h1>FOSS CEAL</h1>
+    <p class="subtitle">Open Source • Community • Learning</p>
+
+    <div class="links">
+      <a href="https://foss.ceal.in/" target="_blank"><i class="fas fa-globe"></i> Official Website</a>
+      <a href="https://github.com/fossceal" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.instagram.com/fossceal?igsh=OThmdWVlYnFtdndn" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://discord.gg/N64AWcKFQN" target="_blank"><i class="fab fa-discord"></i> Join Discord</a>
+      <a href="https://whatsapp.com/channel/0029Vb7PEhoB4hdSCGvrQS3c" target="_blank"><i class="fab fa-whatsapp"></i> HACK 404 </a>
+    </div>
+
+    <footer>
+      Made with ❤️ by FOSS CEAL
+      <div class="copyright">
+        <p>© Copyright <strong>FOSS CEAL <span id="yr"></span></strong>. All Rights Reserved</p>
+      </div>
+      <script>
+        document.getElementById("yr").innerHTML = new Date().getFullYear();
+      </script>
+    </footer>
+  </div>
+</body>
+</html>
